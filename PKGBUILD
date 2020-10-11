@@ -2,7 +2,7 @@
 # Contributor: nairolf74
 pkgname=AUR
 pkgver=1.10.2
-pkgrel=2
+pkgrel=3
 pkgdesc="AUR -> gestionnaire de paquets AUR"
 arch=(any)
 url=""
@@ -16,7 +16,7 @@ conflicts=()
 replaces=()
 backup=()
 install=
-source=($pkgname.tar.gz::https://github.com/nairolf74/AURinstaller.git) 
+source=($pkgname.tar.gz::https://github.com/nairolf74/AURinstaller.git/src) 
 md5sums=('SKIP')
 
 
