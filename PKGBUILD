@@ -2,32 +2,31 @@
 # Contributor: nairolf74
 pkgname=AUR
 pkgver=1.10.2
-pkgrel=3
+pkgrel=4
 pkgdesc="AUR -> gestionnaire de paquets AUR"
 arch=(any)
 url=""
 license=('GPL')
 groups=()
 provides=()
-depends=('curl' 'pacman-contrib')
+depends=('curl' 'pacman-contrib' 'gzip' 'tar')
 optdepends=()
 makedepends=()
 conflicts=()
 replaces=()
 backup=()
 install=
-source=($pkgname.tar.gz::https://github.com/nairolf74/AURinstaller.git/src) 
+source=(https://github.com/nairolf74/AURinstaller/raw/main/src/$pkgname.tar.gz) 
 md5sums=('SKIP')
 
 
-
 build() {
-  cd $srcdir
+  	cd $srcdir
 }
 
 package() {
 cd $srcdir
 mkdir -p $pkgdir/usr/bin
-cp $pkgname.tar.gz $pkgdir/usr/bin/$pkgname
+cp $pkgname $pkgdir/usr/bin/$pkgname
 chmod +x $pkgdir/usr/bin
 }
