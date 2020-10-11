@@ -2,7 +2,7 @@
 # Contributor: nairolf74
 pkgname=AUR
 pkgver=1.10.3
-pkgrel=2
+pkgrel=3
 pkgdesc="AUR -> gestionnaire de paquets AUR"
 arch=(any)
 url=""
