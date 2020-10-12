@@ -1,8 +1,8 @@
 # Maintainer: nairolf74
 # Contributor: nairolf74
 pkgname=AUR
-pkgver=1.10.3
-pkgrel=3
+pkgver=1.10.4
+pkgrel=1
 pkgdesc="AUR -> gestionnaire de paquets AUR"
 arch=(any)
 url=""
