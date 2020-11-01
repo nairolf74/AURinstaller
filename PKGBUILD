@@ -1,7 +1,7 @@
 # Maintainer: nairolf74
 # Contributor: nairolf74
 pkgname=AUR
-pkgver=1.10.7
+pkgver=1.11.0
 pkgrel=1
 pkgdesc="AUR -> gestionnaire de paquets AUR"
 arch=(any)
@@ -9,7 +9,7 @@ url=""
 license=('GPL')
 groups=()
 provides=()
-depends=('curl' 'pacman-contrib' 'gzip' 'tar')
+depends=('wget' 'curl' 'pacman-contrib' 'gzip' 'tar')
 optdepends=()
 makedepends=()
 conflicts=()
