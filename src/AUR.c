@@ -4,7 +4,19 @@
 
 void help()
 {
-	fprintf(stdout,"[-h] -> aide\n[-f] -> fonctionnement sans passer par 'AUR'\n[-n] -> vide le cache\n[-l] -> liste les paquets installés depuis AUR\n[-lp] -> liste les paquets non installés depuis pacman\n[-u] -> liste les paquets pouvant être mis à jour\n[-ua] -> met à jour les paquets\n[-v] -> version du programme\nAUR [option 1] [nom paquet]\n[-i] -> clonage, création et installation du paquet\n[-c] -> clonage du paquet\n[-m] -> créé le paquet (possibilitée d'ajouter les options de makepkg en troisième option\n[-s] -> fini l'installation avec pacman");
+	fprintf(stdout,"[] -> aide\n");
+	fprintf(stdout,"[] -> fonctionnement sans passer par 'AUR'\n");
+	fprintf(stdout,"[] -> vide le cache\n");
+	fprintf(stdout,"[] -> liste les paquets installés depuis AUR\n");
+	fprintf(stdout,"[] -> liste les paquets non installés depuis pacman\n");
+	fprintf(stdout,"[] -> liste les paquets pouvant être mis à jour\n");
+	fprintf(stdout,"[] -> met à jour les paquets\n");
+	fprintf(stdout,"[] -> version du programme\n");
+	fprintf(stdout,"AUR [option 1] [nom paquet]\n");
+	fprintf(stdout,"[] -> clonage, création et installation du paquet\n");
+	fprintf(stdout,"[] -> clonage du paquet\n");
+	fprintf(stdout,"[] -> créé le paquet (possibilitée d'ajouter les options de makepkg en troisième option\n");
+	fprintf(stdout,"[] -> fini l'installation avec pacman");
 }
 
 
