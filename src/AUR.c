@@ -7,7 +7,6 @@
 void help()
 {
 	fprintf(stdout,"[-h] -> aide\n");
-	fprintf(stdout,"[] -> fonctionnement sans passer par 'AUR'\n");
 	fprintf(stdout,"[] -> vide le cache\n");
 	fprintf(stdout,"[] -> liste les paquets installés depuis AUR\n");
 	fprintf(stdout,"[] -> liste les paquets non installés depuis pacman\n");
