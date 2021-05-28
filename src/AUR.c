@@ -6,12 +6,13 @@
 
 
 #define VERSION "2.0.0"
+#define USER getenv("HOME")
 
 void help()
 {
 	fprintf(stdout,"[-h] -> aide\n");
 	fprintf(stdout,"[] -> vide le cache\n");
-	fprintf(stdout,"[] -> liste les paquets installés depuis AUR\n");
+	fprintf(stdout,"[-Qn] -> List all packages installed from AUR\n");
 	fprintf(stdout,"[-Qm] -> List installed packages not found in pacman\n");
 	fprintf(stdout,"[] -> liste les paquets pouvant être mis à jour\n");
 	fprintf(stdout,"[] -> met à jour les paquets\n");
@@ -37,8 +38,18 @@ void noFromPacman()
 	}
 }
 
+void fromAUR()
+{
+	int p=fork();
+	if(p==0)
+	{
+		execl("/bin/ls","/bin/ls",strcat(USER,"/AUR/versionActuelle"),(char*)NULL);
+	}
+}
+
 int main(int argc,char * argv[])
 {
+
 	if(argc>1)
  	{
 		if(strcmp(argv[1],"-V")==0)
@@ -48,6 +59,10 @@ int main(int argc,char * argv[])
 		else if(strcmp(argv[1],"-Qm")==0)
 		{
 			noFromPacman();
+		}
+		else if(strcmp(argv[1],"-Qn")==0)
+		{
+			fromAUR();
 		}
 		else
 	 	{
